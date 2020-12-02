@@ -36,42 +36,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <div class="form-group">
-                    <label>글번호</label>
-                    <input class="form-control" name="num" value='<c:out value="${board.num}"/>' readonly="readonly">
-                </div>
-                <div class="form-group">
-                    <label>글제목</label>
-                    <input class="form-control" name="title" value='<c:out value="${board.title}"/>' readonly="readonly">
-                </div>
-                <div class="form-group">
-                    <label>글내용</label>
-                    <textarea class="form-control" name="content" rows="5"readonly="readonly"><c:out value="${board.content}"/> </textarea>
-                </div>
-                <div class="form-group">
-                    <label>작성자</label>
-                    <input class="form-control" name="id" value='<c:out value="${board.id}"/>' readonly="readonly"/>
-                </div>
-                <div class="form-group">
-                    <label>작성일</label>
-                    <input class="form-control" name="regDate" value='<fmt:formatDate pattern="yyyy-MM-dd" value="${board.regDate}"/>' readonly="readonly"/>
-                </div>
-                <div class="form-group">
-                    <label>수정일</label>
-                    <input class="form-control" name="updateDate" value='<fmt:formatDate pattern="yyyy-MM-dd" value="${board.updateDate}"/>' readonly="readonly"/>
-                </div>
-                <button data-oper="modify" class="btn btn-default" >수정</button>
-                <button data-oper="list" class="btn btn-info">목록으로</button>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="form-group">
+                <label>글번호</label>
+                <input class="form-control" name="num" value='<c:out value="${board.num}"/>' readonly="readonly">
+            </div>
+            <div class="form-group">
+                <label>글제목</label>
+                <input class="form-control" name="title" value='<c:out value="${board.title}"/>' readonly="readonly">
+            </div>
+            <div class="form-group">
+                <label>글내용</label>
+                <textarea class="form-control" name="content" rows="5"readonly="readonly"><c:out value="${board.content}"/> </textarea>
+            </div>
+            <div class="form-group">
+                <label>작성자</label>
+                <input class="form-control" name="id" value='<c:out value="${board.id}"/>' readonly="readonly"/>
+            </div>
+            <div class="form-group">
+                <label>작성일</label>
+                <input class="form-control" name="regDate" value='<fmt:formatDate pattern="yyyy-MM-dd" value="${board.regDate}"/>' readonly="readonly"/>
+            </div>
+            <div class="form-group">
+                <label>수정일</label>
+                <input class="form-control" name="updateDate" value='<fmt:formatDate pattern="yyyy-MM-dd" value="${board.updateDate}"/>' readonly="readonly"/>
+            </div>
+            <button data-oper="modify" class="btn btn-default" >수정</button>
+            <button data-oper="list" class="btn btn-info">목록으로</button>
 
-                <form id='operForm' action="/board/modify" method="get">
-                    <input type="hidden" id="num" name="num" value='<c:out value="${board.num}"/> '>
-                </form>
-        </div>
+            <form id='operForm' action="/board/modify" method="get">
+                <input type="hidden" id="num" name="num" value='<c:out value="${board.num}"/> '>
+            </form>
         </div>
     </div>
+</div>
 </body>
 
 </html>
+

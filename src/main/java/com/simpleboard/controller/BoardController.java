@@ -2,7 +2,6 @@ package com.simpleboard.controller;
 
 import com.simpleboard.domain.BoardVO;
 import com.simpleboard.service.BoardService;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
 import org.springframework.stereotype.Controller;

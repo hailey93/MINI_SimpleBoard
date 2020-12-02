@@ -2,7 +2,6 @@ package com.simpleboard.test;
 
 import com.simpleboard.mapper.TimeMapper;
 import lombok.Setter;
-import lombok.extern.java.Log;
 import lombok.extern.log4j.Log4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

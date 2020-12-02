@@ -2,7 +2,6 @@ package com.simpleboard.service;
 
 import com.simpleboard.domain.BoardVO;
 import com.simpleboard.mapper.BoardMapper;
-import lombok.AllArgsConstructor;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
